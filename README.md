@@ -3,8 +3,8 @@ A workaround to have a functioning SSO in Organizr + Jellyfin
 
 # credits
 All credits for all the hard work in both Jellyfin & Organizr go for their awesome devs:
-https://github.com/jellyfin/jellyfin
-https://github.com/causefx/Organizr
+* https://github.com/jellyfin/jellyfin
+* https://github.com/causefx/Organizr
 
 # how does it work?
 * Jellyfin's auth currently doesn't support external tokens, header auths etc. necessary for proper SSO. When the Jellyfin server authenticates you the client receives an `AccessToken` which it saves to the browser's `localStorage`. Starting from that point, all client (web frontend) -> Jellyfin backend requests use that to prove identity
