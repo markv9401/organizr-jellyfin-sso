@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  organizr:
+    image: organizr/organizr
+    container_name: organizr
+    volumes:
+      - ./organizr/config:/config
+      - ./organizr/reanimate:/reanimate
+      - ./organizr/reanimate/70-reanimate:/etc/cont-init.d/70-reanimate
+    ports:
+      - 80:80
+    restart: always
+
