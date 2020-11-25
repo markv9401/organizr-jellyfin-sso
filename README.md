@@ -18,6 +18,7 @@ All credits for all the hard work in both Jellyfin & Organizr go for their aweso
 
 # setup / how to
 * Start with a working Jellyfin and Organizr setup
+* edit your `/config/www/organizr/api/config.php` and include an option: `'jellyfinSSO': true,` *(or start from ground up via the included default config default.php)*
 * make sure you have Jellyfin accessible on the same (sub)domain as Organizr (for example `domain.com/organizr` and `domain.com/jellyfin`). If you use different (sub)domains for different applications, please include an additional reverse proxy entry so that Jellyfin is accessible on the same root, too. For example
 ```
 ...
