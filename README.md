@@ -1,5 +1,5 @@
 # organizr-jellyfin-sso
-A workaround to have a functioning SSO in Organizr + Jellyfin
+A workaround to have a functioning SSO in Organizr + Jellyfin. This is only a "diff repo" for PoC testing. For actual full code see https://github.com/markv9401/Organizr
 
 # credits
 All credits for all the hard work in both Jellyfin & Organizr go for their awesome devs:
@@ -15,6 +15,7 @@ All credits for all the hard work in both Jellyfin & Organizr go for their aweso
 * since `localStorage` hack-around is all we've got for now, and that's specific to a (sub)domain, your Organizr and your Jellyfin need to be on the same (sub)domain. For example `home.org/organizr` + `home.org/jellyfin` will play nice but `home.org/organizr` + `jellyfin.home.org` will NOT! You can, in fact keep them on seperate (sub)domains but you need an access to Jellyfin on the same domain as Organizr. (More about this on the setup section)
 * any slight change in the Jellyfin authentication process / api and this is broken. This isn't much likely very soon and when it happens it probably does for the best, for an actual, great SSO / token support so no worries here imo
 * using my "setup" will intentionally break Organizr's otherwise smart deployment which pulls & uses the newest git repo every time the container is deployed
+* iPhone / Safari seems to be a little ehh inconsistent? Will look into it. Chrome/Firefox on iPhone is perfect
 
 # setup / how to
 * Start with a working Jellyfin and Organizr setup
